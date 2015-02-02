@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jlhostyn.assignment1.ClaimMenuActivity" >
+
+    <Button
+        android:id="@+id/expenseListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="listExpenses"
+        android:text="@string/expense_button" />
+
+    <Button
+        android:id="@+id/emailClaimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/expenseListButton"
+        android:onClick="emailClaim"
+        android:text="@string/email_claim" />
+
+    <Button
+        android:id="@+id/showClaimStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emailClaimButton"
+        android:onClick="claimSummary"
+        android:text="@string/show_claim" />
+
+    <Button
+        android:id="@+id/editClaimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/showClaimStats"
+        android:onClick="editClaim"
+        android:text="@string/edit_claim" />
+
+    <Button
+        android:id="@+id/deleteClaimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editClaimButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="deleteClaim"
+        android:text="@string/delete_claim" />
+
+</RelativeLayout>

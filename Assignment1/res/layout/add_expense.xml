@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/claimAddTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/expense"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="45sp" />
+
+    <EditText
+        android:id="@+id/addExpenseNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/claimAddTextView"
+        android:layout_toRightOf="@+id/expenseNameTextView"
+        android:ems="10"
+        android:inputType="none"
+        tools:ignore="RtlHardcoded" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/addExpenseNameText"
+        android:layout_toLeftOf="@+id/addExpenseNameText"
+        android:text="@string/date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="34sp"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/addExpenseDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/claimAddTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dateTextView"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Spinner
+        android:id="@+id/pickCategorySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/categoryNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/categoryNameTextView"
+        android:layout_toRightOf="@+id/categoryNameTextView"
+        android:entries="@array/Category_List_Text" />
+
+    <TextView
+        android:id="@+id/categoryNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expenseNameTextView"
+        android:layout_below="@+id/dateTextView"
+        android:text="@string/category"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/expenseDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/categoryNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pickCategorySpinner"
+        android:hint="@string/expense_description_input"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30sp"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/addExpenseDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/amountSpentTextView"
+        android:layout_alignLeft="@+id/expenseDescriptionTextView"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/expenseDescriptionTextView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/expenseNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/claimAddTextView"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/addAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/amountSpentTextView"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/amountSpentTextView"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/pickCurrencySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmExpenseButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/currencyTypeTextView"
+        android:layout_toRightOf="@+id/currencyTypeTextView"
+        android:entries="@array/Currency_List_Text" />
+
+    <Button
+        android:id="@+id/confirmExpenseButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="addExpense"
+        android:text="@string/confirm" />
+
+    <TextView
+        android:id="@+id/currencyTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmExpenseButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/currency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/amountSpentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pickCurrencySpinner"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/pickCurrencySpinner"
+        android:text="@string/amount_spent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="34sp" />
+
+</RelativeLayout>

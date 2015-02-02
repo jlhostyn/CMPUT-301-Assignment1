@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlHardcoded" >
+
+    <TextView
+        android:id="@+id/claimTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/claim"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/confirmClaimButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="addClaimToList"
+        android:text="@string/confirm"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/claimNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/claimTitleTextView"
+        android:layout_toRightOf="@+id/nameView"
+        android:ems="10"
+        android:inputType="textCapWords" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/claimNameText"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/claimTitleTextView"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="29sp" />
+
+    <EditText
+        android:id="@+id/startDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/claimNameText"
+        android:layout_toRightOf="@+id/startDateView"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/startDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/startDateText"
+        android:layout_alignBottom="@+id/startDateText"
+        android:layout_alignParentLeft="true"
+        android:text="@string/start_date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="29sp" />
+
+    <TextView
+        android:id="@+id/endDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/startDateText"
+        android:text="@string/end_date"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="29sp" />
+
+    <EditText
+        android:id="@+id/endDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/endDateTextView"
+        android:layout_toRightOf="@+id/endDateTextView"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/claimDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/endDateTextView"
+        android:hint="@string/claim_description_input"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="29sp" />
+
+    <EditText
+        android:id="@+id/claimDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmClaimButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/claimDescriptionTextView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

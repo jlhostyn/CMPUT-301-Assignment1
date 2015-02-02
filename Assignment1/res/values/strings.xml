@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">jlhostyn-as1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="travel_expense_tracking">Travel Expense Tracking</string>
+
+    <string-array name="Category_List_Text">
+        <item>--Choose Category (Optional)--</item>
+        <item>Air Fare</item>
+        <item>Ground Transport</item>
+        <item>Vehicle Rental</item>
+        <item>Fuel</item>
+        <item>Parking</item>
+        <item>Registration</item>
+        <item>Accomodation</item>
+        <item>Meal</item>
+    </string-array>
+    <string-array name="Currency_List_Text">
+        <item>--Please Choose (Required)--</item>
+        <item>CAD</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+    </string-array>
+
+    <string name="expense">Expense</string>
+    <string name="name">Name:</string>
+    <string name="input">enter here</string>
+    <string name="date">Date:</string>
+    <string name="start_date">Start Date:</string>
+    <string name="end_date">End Date:</string>
+    <string name="category">Category:</string>
+    <string name="expense_description">Expense Description:</string>
+    <string name="expense_description_input">Enter Description Below (Optional)</string>
+    <string name="claim_description">Claim Description:</string>
+    <string name="claim_description_input">Enter Description Below (Optional)</string>
+    <string name="amount_spent">Amount Spent:</string>
+    <string name="currency">Currency Type:</string>
+    <string name="pick_category">Pick a Category:</string>
+    <string name="add">Add</string>
+	<string name="expense_list">Expense List</string>
+    <string name="cancel">Cancel</string>
+    <string name="claim">Claim</string>
+    <string name="claims">Claims</string>
+    <string name="add_claim">Add Claim</string>
+    <string name="confirm">Confirm</string>
+    <string name="title_activity_add_claim">Add Expense Claim</string>
+    <string name="title_activity_claim_menu">Claim Menu</string>
+    <string name="expense_button">View/Add Claim Expenses</string>
+    <string name="email_claim">Email Claim</string>
+    <string name="show_claim">Display Claim Summary</string>
+    <string name="edit_claim">Edit Claim</string>
+    <string name="delete_claim">Delete Claim</string>
+    <string name="title_activity_add_espense">Add/Edit Expenses</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="delete_expense">Delete Expense</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="title_activity_add_expense">Add/Edit Expense</string>
+    <string name="title_activity_expense_menu">Expense Menu</string>
+    <string name="title_activity_claim_summary">Claim Summary</string>
+
+</resources>

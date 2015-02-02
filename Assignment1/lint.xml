@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="RtlHardcoded">
+        <ignore path="res/layout/add_expense.xml" />
+        <ignore path="res/layout/claim_summary.xml" />
+    </issue>
+</lint>

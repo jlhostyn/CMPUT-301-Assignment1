@@ -1,0 +1,44 @@
+Travel Expense App: A travel expense tacking android application
+Copyright (C) 2015  Jared Hostyn jlhostyn@ualberta.ca
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+	The app will show up as jlhostyn-as1 on the emulator and the inluded apk is Assignment1.apk.
+The UML diagram is called as1UML.PNG too in /doc. I unfortunately ran out of time and didn't get a chance
+to implement claims being able to have a status (submitted,returned,approved,in progress) but I
+have implemented every other requirement.
+
+Video Demonstration url: https://www.youtube.com/watch?v=dCvKPV-Sjm4
+
+References
+http://stackoverflow.com/questions/2331513/convert-a-string-to-a-gregoriancalendar 2015-01-31
+http://stackoverflow.com/questions/23826483/go-back-to-specific-activity-from-stack 2015-02-01
+http://stackoverflow.com/questions/24741696/convert-java-gregorian-calendar-to-string 2015-02-01
+http://stackoverflow.com/questions/14049975/how-to-sort-the-dates-from-current-to-old-date-in-android-or-java 2015-01-30
+http://stackoverflow.com/questions/2091465/how-do-i-pass-data-between-activities-in-android 2015-01-31
+http://stackoverflow.com/questions/2197741/how-can-i-send-emails-from-my-android-application 2015-02-01
+http://stackoverflow.com/questions/4671428/how-can-i-add-a-third-button-to-an-android-alert-dialog 2015-02-01
+http://stackoverflow.com/questions/8227820/alert-dialog-two-buttons 2015-02-01
+http://stackoverflow.com/questions/1748977/making-textview-scrollable-in-android 2015-02-01
+Student Picker 1 by Abram Hindle - https://www.youtube.com/watch?v=5PPD0ncJU1g 2015-01-31
+Student Picker 2 by Abram Hindle - https://www.youtube.com/watch?v=VKVYUXNuDDg 2015-01-31
+Student Picker 3 by Abram Hindle - https://www.youtube.com/watch?v=k9ZNbsc0Qgo 2015-01-31
+Student Picker 4 by Abram Hindle - https://www.youtube.com/watch?v=fxjIA4HIruU 2015-01-31
+Student Picker 5 by Abram Hindle - https://www.youtube.com/watch?v=uLnoI7mbuEo 2015-01-31
+Student Picker 6 by Abram Hindle - https://www.youtube.com/watch?v=7zKCuqScaRE 2015-02-01
+Student Picker 7 by Abram Hindle - https://www.youtube.com/watch?v=gmNfc6u1qk0 2015-02-01
+Student Picker 8 by Abram Hindle - https://www.youtube.com/watch?v=uat-8Z6U_Co 2015-02-01
+
+
+
